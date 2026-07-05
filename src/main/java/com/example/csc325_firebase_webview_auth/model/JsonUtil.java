@@ -12,6 +12,7 @@ public final class JsonUtil {
     if (json == null) {
       return null;
     }
+    // regex to grab fields from firestore since they're stored as json
     Pattern pattern = Pattern.compile("\"" + field + "\"\\s*:\\s*\"([^\"]*)\"");
     Matcher matcher = pattern.matcher(json);
     return matcher.find() ? matcher.group(1) : null;
