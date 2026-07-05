@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<VBox alignment="CENTER" spacing="24.0" styleClass="splash-root" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc325_firebase_webview_auth.view.SplashController">
+   <padding>
+      <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+   </padding>
+   <children>
+      <StackPane maxHeight="110.0" maxWidth="110.0" prefHeight="110.0" prefWidth="110.0" styleClass="profile-frame">
+         <children>
+            <Circle radius="45.0" styleClass="profile-circle" />
+            <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+      <Label styleClass="splash-title" text="SmartClass" />
+      <Label styleClass="splash-subtitle" text="CSC-325 Firebase Demo" />
+      <ProgressIndicator />
+      <Label fx:id="statusLabel" styleClass="splash-status" text="Starting up..." />
+   </children>
+</VBox>

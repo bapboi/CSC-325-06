@@ -1,0 +1,234 @@
+* {
+  -fx-tan: #5a4530;
+  -fx-brown: #4a2f16;
+  -fx-green: #3d7a00;
+  -fx-header-gray: #3a3a3a;
+  -fx-status-gray: #2a2a2a;
+}
+
+.root {
+  -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  -fx-font-size: 13px;
+  -fx-base: #2b2b2b;
+}
+
+.app-menu-bar {
+  -fx-background-color: -fx-brown;
+  -fx-padding: 2 0 2 0;
+}
+
+.app-menu-bar .label {
+  -fx-text-fill: #ffd9a0;
+  -fx-font-weight: bold;
+}
+
+.app-menu-bar .menu-item .label {
+  -fx-text-fill: #e0e0e0;
+  -fx-font-weight: normal;
+}
+
+.app-menu-bar .menu-item {
+  -fx-background-color: #2b2b2b;
+}
+
+.app-menu-bar .menu:hover,
+.app-menu-bar .menu:showing {
+  -fx-background-color: #5a3a1a;
+}
+
+.app-menu-bar .menu:hover .label,
+.app-menu-bar .menu:showing .label {
+  -fx-text-fill: white;
+}
+
+.sidebar,
+.splash-root,
+.auth-root {
+  -fx-background-color: -fx-tan;
+}
+
+.sidebar-label {
+  -fx-font-size: 13px;
+  -fx-font-weight: bold;
+  -fx-text-fill: #f0e0c8;
+}
+
+.profile-frame {
+  -fx-background-color: #1e1e1e;
+  -fx-border-color: #555555;
+  -fx-border-width: 1.5;
+}
+
+.profile-circle {
+  -fx-fill: #888888;
+}
+
+.data-table,
+.data-table .virtual-flow,
+.data-table .clipped-container,
+.data-table .sheet {
+  -fx-background-color: #1e1e1e;
+  -fx-control-inner-background: #1e1e1e;
+  -fx-control-inner-background-alt: #262626;
+  -fx-table-cell-border-color: #333333;
+}
+
+.data-table .column-header-background {
+  -fx-background-color: -fx-header-gray;
+}
+
+.data-table .column-header,
+.data-table .filler {
+  -fx-background-color: -fx-header-gray;
+  -fx-border-color: transparent #555555 transparent transparent;
+}
+
+.data-table .column-header .label {
+  -fx-text-fill: #e0e0e0;
+  -fx-font-weight: bold;
+  -fx-alignment: CENTER-LEFT;
+}
+
+.data-table .table-row-cell {
+  -fx-background-color: #1e1e1e !important;
+  -fx-border-color: transparent transparent #333333 transparent;
+}
+
+.data-table .table-row-cell:odd {
+  -fx-background-color: #262626 !important;
+}
+
+.data-table .table-row-cell .table-cell {
+  -fx-background-color: transparent !important;
+  -fx-text-fill: #e0e0e0;
+}
+
+.data-table .table-row-cell .text {
+  -fx-fill: #e0e0e0;
+}
+
+.data-table .table-row-cell:selected,
+.data-table .table-row-cell:selected .table-cell {
+  -fx-background-color: derive(-fx-green, 20%) !important;
+}
+
+.data-table .placeholder .label {
+  -fx-text-fill: #cccccc;
+}
+
+/* ---- Form panel (dashboard) / auth cards (login, register) ---- */
+.form-panel {
+  -fx-background-color: -fx-green;
+}
+
+.form-title {
+  -fx-font-size: 14px;
+  -fx-font-weight: bold;
+  -fx-text-fill: #f0f0f0;
+}
+
+.form-field,
+.auth-field {
+  -fx-background-color: #2b2b2b;
+  -fx-text-fill: #f0f0f0;
+  -fx-background-radius: 2;
+  -fx-border-radius: 2;
+  -fx-border-color: #555555;
+  -fx-padding: 6 8 6 8;
+  -fx-pref-height: 32px;
+}
+
+.form-field-active {
+  -fx-border-color: #4da6ff;
+  -fx-border-width: 2;
+}
+
+.auth-card {
+  -fx-background-color: #232323;
+  -fx-background-radius: 6;
+  -fx-border-color: #555555;
+  -fx-border-width: 1.5;
+  -fx-border-radius: 6;
+}
+
+.auth-title {
+  -fx-font-size: 22px;
+  -fx-font-weight: bold;
+  -fx-text-fill: #ffd9a0;
+}
+
+.auth-subtitle {
+  -fx-font-size: 13px;
+  -fx-text-fill: #cfa876;
+}
+
+.auth-status {
+  -fx-font-size: 12px;
+  -fx-text-fill: #ff8a75;
+}
+
+.splash-title {
+  -fx-font-size: 28px;
+  -fx-font-weight: bold;
+  -fx-text-fill: #ffd9a0;
+}
+
+.splash-subtitle {
+  -fx-font-size: 14px;
+  -fx-text-fill: #cfa876;
+}
+
+.splash-status {
+  -fx-font-size: 12px;
+  -fx-text-fill: #cfa876;
+}
+
+/* ---- Buttons ---- */
+.action-button,
+.primary-button {
+  -fx-background-color: -fx-brown;
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+  -fx-font-size: 14px;
+  -fx-border-color: #2c5500;
+  -fx-border-width: 2;
+  -fx-border-radius: 4;
+  -fx-background-radius: 4;
+  -fx-padding: 10 0 10 0;
+  -fx-cursor: hand;
+}
+
+.action-button:hover,
+.primary-button:hover {
+  -fx-background-color: #5c3a1d;
+}
+
+.action-button:pressed,
+.primary-button:pressed {
+  -fx-background-color: #3a2410;
+}
+
+.secondary-button {
+  -fx-background-color: -fx-tan;
+  -fx-text-fill: #f0e0c8;
+  -fx-font-weight: bold;
+  -fx-border-color: #888888;
+  -fx-border-width: 1.5;
+  -fx-border-radius: 4;
+  -fx-background-radius: 4;
+  -fx-cursor: hand;
+}
+
+.secondary-button:hover {
+  -fx-background-color: #6b543a;
+}
+
+.status-bar {
+  -fx-background-color: -fx-status-gray;
+  -fx-border-color: #555555 transparent transparent transparent;
+}
+
+.status-bar .label,
+.status-label {
+  -fx-text-fill: #e0e0e0;
+}
