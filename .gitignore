@@ -1,0 +1,12 @@
+target/
+.idea/
+*.class
+*.log
+.DS_Store
+.classpath
+.project
+.settings/
+.factorypath
+# secrets
+src/main/resources/files/key.json
+src/main/resources/files/firebase_config.properties
