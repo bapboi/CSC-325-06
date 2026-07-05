@@ -179,8 +179,8 @@ public class AccessFBView implements Initializable {
   private void showAbout(ActionEvent event) {
     Alert alert = new Alert(Alert.AlertType.INFORMATION);
     alert.setTitle("About");
-    alert.setHeaderText("CSC-325 Firebase Demo");
-    alert.setContentText("JavaFX + Firebase Auth/Firestore/Storage demo built for CSC-325.");
+    alert.setHeaderText("CSC-325 module 06");
+    alert.setContentText("ammar ali");
     alert.showAndWait();
   }
 
